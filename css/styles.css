@@ -335,6 +335,7 @@ img {
 .team-social-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .team-social-list .social-link {
@@ -355,7 +356,7 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /** ============================== */
