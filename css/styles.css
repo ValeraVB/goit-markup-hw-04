@@ -147,7 +147,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -163,9 +163,8 @@ img {
   background: #2e2f42;
 }
 
-.hero-container {
-  width: 1440px;
-  background-repeat: no-repeat;
+.hero .hero-container {
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   padding: 188px 0;
@@ -174,9 +173,9 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  
 }
 
 .hero-title {
@@ -309,7 +308,11 @@ img {
 .team-cart {
   width: 232px;
   margin: 0 auto;
-  padding: 32px 0;
+}
+
+.team-image {
+  background-size: cover;
+  margin-bottom: 32px;
 }
 
 .team-card-title {
@@ -334,7 +337,10 @@ img {
 
 .social-links-team {
   display: flex;
+  justify-content: center;
   gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 32px;
 }
 
 .social-links-team .link {
@@ -352,8 +358,8 @@ img {
   fill: #f4f4fd;
 }
 
-.social-links .link:hover,
-.social-links .link:focus {
+.social-links-team .link:hover,
+.social-links-team .link:focus {
   background-color: #31d0aa;
 }
 
@@ -392,6 +398,39 @@ img {
 .project-cart-item {
   background: #fff;
   flex-basis: calc((100% - 3 * 24px) / 3);
+}
+
+.project-cart-item:hover .portfolio-cover-text {
+  transform: translateY(0);
+}
+
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cover-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  text-align: left;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
 }
 
 .card-content {
