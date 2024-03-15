@@ -332,13 +332,12 @@ img {
   margin-bottom: 8px;
 }
 
-.social-links-team {
+.team-social-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
 }
 
-.social-item {
+.team-social-list .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,8 +353,8 @@ img {
   fill: #f4f4fd;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: #31d0aa;
 }
 
